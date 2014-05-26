@@ -1,0 +1,160 @@
+@import url(fonts/clear-sans.css);
+body {
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #776e65;
+}
+
+.title{
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    margin:10px;
+    font-size: 80px;
+    text-align: center;
+}
+
+.sub{
+    margin:0px 10px 10px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sub a{
+    color: #776e65;
+}
+
+.desc{
+    text-align: center;
+    width:300px;
+    margin: auto auto 30px auto;
+
+}
+
+.desc a{
+    color: #776e65;
+}
+
+.portfolioFilter a { 
+    margin: 10px;
+	//color:#666;
+    font-size:25px;
+	text-decoration:none;
+}
+
+.portfolioFilter a.current { 
+    font-weight:bold;
+    /*color: #FF6F6F;*/
+}
+
+
+.portfolioContainer a{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    /*border: rgb(248, 248, 248) 10px solid;*/
+    overflow: hidden;
+    margin:10px;
+}
+
+.portfolioContainer a:hover{
+    opacity: 0.9;
+    background-color: rgb(247, 247, 247);
+}
+
+.portfolioContainer a div{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    text-align: center;
+    height:auto;
+    top: 32%;
+    color: #776e65;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.subtitle{
+    display: block;
+    padding-top:4px;
+    font-size: 12px;
+}
+
+.tv{
+    background-color: #D1F2A5;
+}
+.science{
+     background-color: #FFC48C;
+}
+.twist{
+     background-color: #FF9F80;
+}
+.animal{
+     background-color: #F56991;
+}
+.puzzle{
+     background-color: #A5BEF2;
+}
+.music{
+     background-color: #A5EFF2;
+}
+.language{
+     background-color: rgb(250, 250, 250);
+}
+.other{
+     background-color: #F2A5EC;
+}
+
+.cat-all{
+    color: black;
+}
+
+.cat-tv{
+    color: #D1F2A5;
+}
+.cat-science{
+     color: #FFC48C;
+}
+.cat-twist{
+     color: #FF9F80;
+}
+.cat-animal{
+     color: #F56991;
+}
+.cat-puzzle{
+     color: #A5BEF2;
+}
+.cat-music{
+     color: #A5EFF2;
+}
+.cat-language{
+     color: rgb(250, 250, 250);
+     text-shadow: 1px 1px #A0A0A0;
+}
+.cat-other{
+     color: #F2A5EC;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}

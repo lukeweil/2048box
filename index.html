@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2048 Box by Luke Weil</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+		<script src="js/jquery.isotope.js" type="text/javascript"></script> 
+   		<link rel="shortcut icon" href="favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="google-site-verification" content="PGl5Wbrba723UyogMHpHe4fuud_Mr3qipVEcWvPOJVI" />
+		<meta property="og:site_name" content="2048 Box by Luke Weil"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="assets/share.jpg" />
+		<meta property="og:title" content="2048 Box by Luke Weil"/>
+		<meta property="og:description" content="A collection of various 2048 games that I found on the web. Filterable for your convenience."/>
+		<meta name="description" content="A collection of various 2048 games that I found on the web. Filterable for your convenience." />
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+		<script>
+		  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  // ga('create', 'UA-50793319-1', 'lukeweil.github.io');
+		  // ga('require', 'displayfeatures');
+		  // ga('send', 'pageview');
+		
+		</script>
+	</head>
+	<body>
+		<h1 class="title">2048 Box</h1>
+		<h1 class="sub">by <a href="http://weiln.com">Luke Weil</a></h1>
+		<div class="addthis_responsive_sharing" style="text-align:center;margin:20px;"></div>
+
+		<p class="desc">You can add your own by forking and making a pull request <a rel="nofollow" href="https://github.com/lukeweil/2048box">here</a></p>
+		 
+		<div class="portfolioFilter">
+			<a href="#" class="cat-all" data-filter="*" class="current">All Categories</a>
+			<a href="#" class="cat-tv" data-filter=".tv">TV</a>
+			<a href="#" class="cat-science" data-filter=".science">Math &amp; Science</a>
+			<a href="#" class="cat-puzzle" data-filter=".puzzle">Puzzle</a>
+			<a href="#" class="cat-twist" data-filter=".twist">Twists &amp; Mashups</a>
+			<a href="#" class="cat-music" data-filter=".music">Music</a>
+			<a href="#" class="cat-animal" data-filter=".animal">Animals</a>
+			<a href="#" class="cat-language" data-filter=".language">Language</a>
+			<a href="#" class="cat-other" data-filter=".other">Other</a>
+		</div>
+
+		<div class="portfolioContainer">
+			<a rel="nofollow" class="tv" href="http://lukeweil.github.io/2048-veep/"><div>
+				Veep
+				<span class="subtitle">by Luke Weil</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://uhyohyo.net/quantum2048/"><div>
+				Quantum 2048
+				<span class="subtitle">by uhyo</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://dweymouth.github.io/divideit/"><div>
+				Divide It!
+				<span class="subtitle">by Drew Weymouth</span>
+			</div></a>
+			<a rel="nofollow" class="animal" href="http://paw2048.hebergratuit.net/"><div>
+				PAW 2048 (Cats)
+				<span class="subtitle">by hebergratuit</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://hczhcz.github.io/Racing-2048/"><div>
+				Racing
+				<span class="subtitle">by hcz</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://prat0318.github.io/2048-tetris/"><div>
+				Tetris
+				<span class="subtitle">by Prateek Agarwal</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://lukeweil.github.io/game-of-thrones-2048/"><div>
+				Game of Thrones
+				<span class="subtitle">by Luke Weil</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://emils.github.io/2048-multiplayer/"><div>
+				Multiplayer
+				<span class="subtitle">by Emil Stolarsky</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://lukeweil.github.io/2048-silicon-valley/"><div>
+				Silicon Valley
+				<span class="subtitle">by Luke Weil</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://www.2048game.org/simpson/"><div>
+				Simpsons
+				<span class="subtitle">by Amit Surti</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://chenglou.github.io/flappy-2048-side-by-side/"><div>
+				Flappy 2048 Side by Side
+				<span class="subtitle">by uralozden</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://mgarciaisaia.github.io/2048dbz/"><div>
+				DBZ
+				<span class="subtitle">by Gonzalo Gluzman</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="https://sphere.chronosempire.org.uk/~HEx/8402/"><div>
+				2048 Evil AI
+				<span class="subtitle">by Tom Hargreaves</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://wegnerdesign.com/2048/"><div>
+				2(048)
+				<span class="subtitle">by Joe Wegner</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://games.usvsth3m.com/2048/the-lord-of-the-rings-edition-4/"><div>
+				The Lord Of The Rings Edition
+				<span class="subtitle">by Ryan Bailey</span>
+			</div></a>
+			<a rel="nofollow" class="animal" href="http://cshao.me/Ventus-2048/"><div>
+				Ventus the Corgi Edition
+				<span class="subtitle">by Chu Shao</span>
+			</div></a>
+			<a rel="nofollow" class="other" href="http://games.usvsth3m.com/2048/meta-edition/"><div>
+				Meta
+				<span class="subtitle">by @czetter</span>
+			</div></a>
+			<a rel="nofollow" class="music" href="http://games.usvsth3m.com/2048/beatles-album-edition/"><div>
+				Beatles
+				<span class="subtitle">by @mickey</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://games.usvsth3m.com/2048/bbc-sherlock-edition-4/"><div>
+				BBC Sherlock Edition
+				<span class="subtitle">by games.usvsth3m.com</span>
+			</div></a>
+			<a rel="nofollow" class="other" href="http://lol2048.com/"><div>
+				League of Legends
+				<span class="subtitle">by Chris Sloey</span>
+			</div></a>
+			<a rel="nofollow" class="other" href="http://games.usvsth3m.com/2048/swearing-edition/"><div>
+				Swearing
+				<span class="subtitle">by games.usvsth3m.com</span>
+			</div></a>
+
+			<a rel="nofollow" class="other" href="http://jennypeng.me/2048/"><div>
+				Win
+				<span class="subtitle">byjennypeng</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://rudradevbasak.github.io/16384_hex/"><div>
+				16384 Hex
+				<span class="subtitle">by Rudradev Basak</span>
+			</div></a>
+			<a rel="nofollow" class="animal" href="http://doge2048.com/"><div>
+				DOGE
+				<span class="subtitle">by doge2048</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://amschrader.github.io/2048/"><div>
+				Pokemon
+				<span class="subtitle">by Allyson Schrader</span>
+			</div></a>
+			<a rel="nofollow" class="puzzle" href="http://mcsdwvl.github.io/to11/"><div>
+				to11
+				<span class="subtitle">by Matthew Vassilakos</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://kiokokun.github.io/gh-pages/"><div>
+				Law Edition
+				<span class="subtitle">by kiokokun</span>
+			</div></a>
+			<a rel="nofollow" class="other" href="http://egansoft.github.io/2048hack/"><div>
+				HACK 2048
+				<span class="subtitle">by Nicholas Egan</span>
+			</div></a>
+			<a rel="nofollow" class="language" href="http://simos.github.io/2048/"><div>
+				Greek
+				<span class="subtitle">by Σίμο Ξενιτέλλη</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://games.usvsth3m.com/2048/roman-numerals-edition-33/"><div>
+				Roman numerals Edition
+				<span class="subtitle">by Daniel Barber</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://www.voxcatch.fr/2048WWE/"><div>
+				WWE
+				<span class="subtitle">by  Darren Fog</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://bennettfeely.com/air2048/"><div>
+				Air2048 (Camera)
+				<span class="subtitle">by Bennett Feely</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://0x0800.github.io/2048-STARWARS/"><div>
+				STAR WARS
+				<span class="subtitle">by 0x0800</span>
+			</div></a>
+			<a rel="nofollow" class="other" href="http://duarteduarte.tk/2048/"><div>
+				A Mostly Wrong History of Programming Languages
+				<span class="subtitle">by Duarte Duarte and JP Dias</span>
+			</div></a>
+			<a rel="nofollow" class="other" href="http://0x0800.github.io/2048-ARMY/"><div>
+				ARMY
+				<span class="subtitle">by 0x0800</span>
+			</div></a>
+			<a rel="nofollow" class="other" href="http://gagikm.github.io/Finals2048/"><div>
+				Finals 2048
+				<span class="subtitle">by Gagik Movsisyan</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://jmhummel.github.io/1597/"><div>
+				1597 (Fibonacci)
+				<span class="subtitle">by Jeremy Hummel</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://alexfink.github.io/dive/"><div>
+				DIVE
+				<span class="subtitle">by Allen Knutson</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://frankh.github.io/2048/"><div>
+				2048 +-*/
+				<span class="subtitle">by frankh</span>
+			</div></a>
+			<a rel="nofollow" class="music" href="http://cantorion.org/2048"><div>
+				Musical 2048
+				<span class="subtitle">by Cantorion</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://games.usvsth3m.com/2048-doctor-who-edition/"><div>
+				Doctor Who Edition
+				<span class="subtitle">by http://games.usvsth3m.com/</span>
+			</div></a>
+			<a rel="nofollow" class="music" href="http://games.usvsth3m.com/2048/led-zeppelin-edition-10/"><div>
+				Led Zeppelin Edition
+				<span class="subtitle">by @cheesecake_assa</span>
+			</div></a>
+			<a rel="nofollow" class="music" href="http://games.usvsth3m.com/2048/rihanna-edition-18/"><div>
+				Rihanna Edition
+				<span class="subtitle">by Emma S</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://2048alphabet.com/azbuka/"><div>
+				2048 Азбука игрица
+				<span class="subtitle">by Мишо М. Петковић</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://jamesdonnelly.github.io/Isotopic256/"><div>
+				Isotopic 256
+				<span class="subtitle">by James Donnelly</span>
+			</div></a>
+			<a rel="nofollow" class="meme" href="http://louhuang.com/2048-numberwang/"><div>
+				Numberwang
+				<span class="subtitle">by louhuang</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://logarithmic-flappy-2048.ajf.me/"><div>
+				Logarithmic Flappy 2048
+				<span class="subtitle">by ajf</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://matthewbauer.us/2048i/"><div>
+				2048i
+				<span class="subtitle">by Matthew Bauer</span>
+			</div></a>
+			<a rel="nofollow" class="puzzle" href="http://turbomaze.github.io/2048-Study/"><div>
+				Study
+				<span class="subtitle">by </span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://wasting-ti.me/2048+2048/"><div>
+				2048 + 2048
+				<span class="subtitle">by wasting-ti.me</span>
+			</div></a>
+			<a rel="nofollow" class="language" href="http://games.usvsth3m.com/2048/-edition-12318/"><div>
+				日本語 Edition
+				<span class="subtitle">by Superfoo</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://games.usvsth3m.com/2048/1-edition-2637/"><div>
+				1 Edition
+				<span class="subtitle">by Superfoo</span>
+			</div></a>
+			<a rel="nofollow" class="puzzle" href="http://kshitij-banerjee.github.io/Cubiks-2048/"><div>
+				Cubik's 2048
+				<span class="subtitle">by Kshitij Banerjee</span>
+			</div></a>
+			<a rel="nofollow" class="meme" href="http://games.usvsth3m.com/2048/minecraft-edition-1125/"><div>
+				Minecraft
+				<span class="subtitle">by @Total2048</span>
+			</div></a>
+			<a rel="nofollow" class="other" href="https://cld.pt/dl/download/4cb11a68-1699-4f22-ab48-61cb98ca3032/2048undress/index.html"><div>
+				Undress (NSFW)
+				<span class="subtitle">by ?</span>
+			</div></a>
+			<a rel="nofollow" class="other" href="http://www.romaincousin.fr/2048/"><div>
+				Animated Edition
+				<span class="subtitle">by Romain Cousin</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://games.usvsth3m.com/2048/powerpuff-edition-2/"><div>
+				PowerPuff Edition
+				<span class="subtitle">by @DominiqeM</span>
+			</div></a>
+			<a rel="nofollow" class="puzzle" href="http://www.codemore.info/obstacle-2048/"><div>
+				Obstacle 2048
+				<span class="subtitle">by n-at</span>
+			</div></a>
+			<a rel="nofollow" class="music" href="http://games.usvsth3m.com/2048/beastie-boys-edition-edition/"><div>
+				Beastie Boys Edition Edition
+				<span class="subtitle">by @MinerGamez</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://random-strangers.com/2048analyze"><div>
+				Analyze (AI)
+				<span class="subtitle">by random-strangers</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://pfmscode.github.io/godly-2048/"><div>
+				Godly
+				<span class="subtitle">by @lachlanjc and @tns12</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://games.usvsth3m.com/2048/the-weasleys--edition/"><div>
+				The Weasleys Edition
+				<span class="subtitle">by Izzy</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://silviu.ml/x11/"><div>
+				x11
+				<span class="subtitle">by Silviu-Madalin Lorent</span>
+			</div></a>
+			<a rel="nofollow" class="tv" href="http://games.usvsth3m.com/2048/old-onepiece--edition/"><div>
+				Old OnePiece Edition
+				<span class="subtitle">by Ale Stella</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://silviu.ml/trips/"><div>
+				3ps
+				<span class="subtitle">by Silviu-Madalin Lorent</span>
+			</div></a>
+			<a rel="nofollow" class="twist" href="http://hczhcz.github.io/Flappy-2048/"><div>
+				Flappy 2048
+				<span class="subtitle">by hcz</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://jonastermeau.com/files/others/2048%5E0/"><div>
+				2048^0
+				<span class="subtitle">by Jonas Termeau</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://jmfork.github.io/2048/"><div>
+				Deterministic 2048
+				<span class="subtitle">by jmfork</span>
+			</div></a>
+			<a rel="nofollow" class="science" href="http://hgentry.github.io/204div/"><div>
+				204÷
+				<span class="subtitle">by hgentry</span>
+			</div></a>
+		</div>
+		 
+		<script type="text/javascript">
+			$(window).load(function(){
+
+			    var $container = $('.portfolioContainer');
+
+			    $container.isotope({
+			        filter: '*',
+			        animationOptions: {
+			            duration: 750,
+			            easing: 'linear',
+			            queue: false
+			        }
+			    });
+			 
+			    $('.portfolioFilter a').click(function(){
+			        $('.portfolioFilter .current').removeClass('current');
+			        $(this).addClass('current');
+			 
+			        var selector = $(this).attr('data-filter');
+			        $container.isotope({
+			            filter: selector,
+			            animationOptions: {
+			                duration: 750,
+			                easing: 'linear',
+			                queue: false
+			            }
+			         });
+			         return false;
+			    }); 
+			});
+		</script>
+		<!-- // <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-535c8fbc49ec17c7"></script> -->
+	</body>
+</html>

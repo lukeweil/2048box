@@ -1,0 +1,1096 @@
+@import url(fonts/clear-sans.css);
+/* line 24, main.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* line 34, main.scss */
+.spoiler {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0px 10px 0px;
+  color: #550000;
+}
+
+/* line 41, main.scss */
+body {
+  margin: 80px 0;
+}
+
+/* line 45, main.scss */
+.donate {
+  text-align: center;
+}
+
+/* line 49, main.scss */
+html {
+  background: url("../assets/bg.jpg");
+  background-size: cover;
+}
+
+/* line 76, helpers.scss */
+.heading:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 58, main.scss */
+.donate-message {
+  padding: 5px;
+  text-align: center;
+  text-shadow: 1px 1px #3C3C3C;
+}
+
+/* line 63, main.scss */
+h1.title {
+  text-align: center;
+  font-size: 120px;
+  font-family: 'Source Sans Pro', sans-serif;
+/*  text-shadow: 2px 2px #000;*/
+  font-weight: bold;
+  margin: 0;
+  display: block;
+}
+
+/* line 73, main.scss */
+.subtitle {
+  font-size: 40px;
+  margin-top: -40px;
+  margin-bottom: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+/*  text-shadow: 2px 2px #000;*/
+  display: block;
+  text-align: center;
+}
+
+/* line 82, main.scss */
+.subtitle-name {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+/* line 91, main.scss */
+.audio {
+  text-align: center;
+  padding: 30px 0 10px 0;
+}
+
+@-webkit-keyframes move-up {
+  /* line 98, main.scss */
+  0% {
+    top: 25px;
+    opacity: 1;
+  }
+
+  /* line 103, main.scss */
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes move-up {
+  /* line 98, main.scss */
+  0% {
+    top: 25px;
+    opacity: 1;
+  }
+
+  /* line 103, main.scss */
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+
+@keyframes move-up {
+  /* line 98, main.scss */
+  0% {
+    top: 25px;
+    opacity: 1;
+  }
+
+  /* line 103, main.scss */
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+
+/* line 109, main.scss */
+.scores-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* line 116, main.scss */
+.score-container, .best-container {
+  position: relative;
+  display: inline-block;
+  background: #bbada0;
+  padding: 15px 25px;
+  font-size: 25px;
+  height: 25px;
+  line-height: 47px;
+  font-weight: bold;
+  border-radius: 3px;
+  color: white;
+  margin-top: 8px;
+  text-align: center;
+}
+/* line 132, main.scss */
+.score-container:after, .best-container:after {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #eee4da;
+}
+/* line 144, main.scss */
+.score-container .score-addition, .best-container .score-addition {
+  position: absolute;
+  right: 30px;
+  color: red;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+  -webkit-animation: move-up 600ms ease-in;
+  -moz-animation: move-up 600ms ease-in;
+  animation: move-up 600ms ease-in;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 158, main.scss */
+.score-container:after {
+  content: "Score";
+}
+
+/* line 162, main.scss */
+.best-container:after {
+  content: "Best";
+}
+
+/* line 166, main.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.65;
+}
+
+/* line 172, main.scss */
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* line 180, main.scss */
+strong.important {
+  text-transform: uppercase;
+}
+
+/* line 185, main.scss */
+hr {
+  border: none;
+  border-bottom: 1px solid white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* line 192, main.scss */
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes fade-in {
+  /* line 198, main.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 202, main.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  /* line 198, main.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 202, main.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  /* line 198, main.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 202, main.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 221, main.scss */
+.game-container {
+  margin-top: 10px;
+  position: relative;
+  padding: 15px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  background: #bbada0;
+  border-radius: 6px;
+  width: 500px;
+  height: 500px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 245, main.scss */
+.game-container .game-message {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(238, 228, 218, 0.5);
+  z-index: 100;
+  text-align: center;
+  -webkit-animation: fade-in 800ms ease 1200ms;
+  -moz-animation: fade-in 800ms ease 1200ms;
+  animation: fade-in 800ms ease 1200ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 258, main.scss */
+.game-container .game-message p {
+  font-size: 60px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 222px;
+}
+/* line 268, main.scss */
+.game-container .game-message .lower {
+  display: block;
+  margin-top: 59px;
+}
+/* line 273, main.scss */
+.game-container .game-message a {
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: rgba(249, 246, 242, 0.84);
+  height: 40px;
+  line-height: 42px;
+  margin-left: 9px;
+}
+/* line 278, main.scss */
+.game-container .game-message a.keep-playing-button {
+  display: none;
+}
+/* line 286, main.scss */
+.game-container .game-message.game-won {
+  background: rgba(237, 194, 46, 0.5);
+  color: rgba(249, 246, 242, 0.84);
+}
+/* line 290, main.scss */
+.game-container .game-message.game-won a.keep-playing-button {
+  display: inline-block;
+}
+/* line 295, main.scss */
+.game-container .game-message.game-won, .game-container .game-message.game-over {
+  display: block;
+}
+
+/* line 301, main.scss */
+.grid-container {
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 306, main.scss */
+.grid-row {
+  margin-bottom: 15px;
+}
+/* line 309, main.scss */
+.grid-row:last-child {
+  margin-bottom: 0;
+}
+/* line 313, main.scss */
+.grid-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 320, main.scss */
+.grid-cell {
+  width: 106.25px;
+  height: 106.25px;
+  margin-right: 15px;
+  float: left;
+  border-radius: 3px;
+  background: rgba(238, 228, 218, 0.35);
+}
+/* line 330, main.scss */
+.grid-cell:last-child {
+  margin-right: 0;
+}
+
+/* line 335, main.scss */
+.tile-container {
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 341, main.scss */
+.tile, .tile .tile-inner {
+  width: 107px;
+  height: 107px;
+  line-height: 116.25px;
+}
+/* line 350, main.scss */
+.tile.tile-position-1-1 {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+/* line 350, main.scss */
+.tile.tile-position-1-2 {
+  -webkit-transform: translate(0px, 121px);
+  -moz-transform: translate(0px, 121px);
+  transform: translate(0px, 121px);
+}
+/* line 350, main.scss */
+.tile.tile-position-1-3 {
+  -webkit-transform: translate(0px, 242px);
+  -moz-transform: translate(0px, 242px);
+  transform: translate(0px, 242px);
+}
+/* line 350, main.scss */
+.tile.tile-position-1-4 {
+  -webkit-transform: translate(0px, 363px);
+  -moz-transform: translate(0px, 363px);
+  transform: translate(0px, 363px);
+}
+/* line 350, main.scss */
+.tile.tile-position-2-1 {
+  -webkit-transform: translate(121px, 0px);
+  -moz-transform: translate(121px, 0px);
+  transform: translate(121px, 0px);
+}
+/* line 350, main.scss */
+.tile.tile-position-2-2 {
+  -webkit-transform: translate(121px, 121px);
+  -moz-transform: translate(121px, 121px);
+  transform: translate(121px, 121px);
+}
+/* line 350, main.scss */
+.tile.tile-position-2-3 {
+  -webkit-transform: translate(121px, 242px);
+  -moz-transform: translate(121px, 242px);
+  transform: translate(121px, 242px);
+}
+/* line 350, main.scss */
+.tile.tile-position-2-4 {
+  -webkit-transform: translate(121px, 363px);
+  -moz-transform: translate(121px, 363px);
+  transform: translate(121px, 363px);
+}
+/* line 350, main.scss */
+.tile.tile-position-3-1 {
+  -webkit-transform: translate(242px, 0px);
+  -moz-transform: translate(242px, 0px);
+  transform: translate(242px, 0px);
+}
+/* line 350, main.scss */
+.tile.tile-position-3-2 {
+  -webkit-transform: translate(242px, 121px);
+  -moz-transform: translate(242px, 121px);
+  transform: translate(242px, 121px);
+}
+/* line 350, main.scss */
+.tile.tile-position-3-3 {
+  -webkit-transform: translate(242px, 242px);
+  -moz-transform: translate(242px, 242px);
+  transform: translate(242px, 242px);
+}
+/* line 350, main.scss */
+.tile.tile-position-3-4 {
+  -webkit-transform: translate(242px, 363px);
+  -moz-transform: translate(242px, 363px);
+  transform: translate(242px, 363px);
+}
+/* line 350, main.scss */
+.tile.tile-position-4-1 {
+  -webkit-transform: translate(363px, 0px);
+  -moz-transform: translate(363px, 0px);
+  transform: translate(363px, 0px);
+}
+/* line 350, main.scss */
+.tile.tile-position-4-2 {
+  -webkit-transform: translate(363px, 121px);
+  -moz-transform: translate(363px, 121px);
+  transform: translate(363px, 121px);
+}
+/* line 350, main.scss */
+.tile.tile-position-4-3 {
+  -webkit-transform: translate(363px, 242px);
+  -moz-transform: translate(363px, 242px);
+  transform: translate(363px, 242px);
+}
+/* line 350, main.scss */
+.tile.tile-position-4-4 {
+  -webkit-transform: translate(363px, 363px);
+  -moz-transform: translate(363px, 363px);
+  transform: translate(363px, 363px);
+}
+
+/* line 363, main.scss */
+.tile {
+  position: absolute;
+  -webkit-transition: 100ms ease-in-out;
+  -moz-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+}
+/* line 366, main.scss */
+.tile .tile-inner {
+  border-radius: 3px;
+  background: #eee4da;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 55px;
+}
+/* line 404, main.scss */
+.tile.tile-2 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/2.jpg");
+}
+/* line 404, main.scss */
+.tile.tile-4 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/4.jpg");
+}
+/* line 404, main.scss */
+.tile.tile-8 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/8.jpg");
+}
+/* line 404, main.scss */
+.tile.tile-16 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/16.jpg");
+}
+/* line 404, main.scss */
+.tile.tile-32 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/32.jpg");
+}
+/* line 404, main.scss */
+.tile.tile-64 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/64.jpg");
+}
+/* line 404, main.scss */
+.tile.tile-128 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/128.jpg");
+  font-size: 45px;
+}
+@media screen and (max-width: 520px) {
+  /* line 404, main.scss */
+  .tile.tile-128 .tile-inner {
+    font-size: 25px;
+  }
+}
+/* line 404, main.scss */
+.tile.tile-256 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/256.jpg");
+  font-size: 45px;
+}
+@media screen and (max-width: 520px) {
+  /* line 404, main.scss */
+  .tile.tile-256 .tile-inner {
+    font-size: 25px;
+  }
+}
+/* line 404, main.scss */
+.tile.tile-512 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/512.jpg");
+  font-size: 45px;
+}
+@media screen and (max-width: 520px) {
+  /* line 404, main.scss */
+  .tile.tile-512 .tile-inner {
+    font-size: 25px;
+  }
+}
+/* line 404, main.scss */
+.tile.tile-1024 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/1024.jpg");
+  font-size: 35px;
+}
+@media screen and (max-width: 520px) {
+  /* line 404, main.scss */
+  .tile.tile-1024 .tile-inner {
+    font-size: 15px;
+  }
+}
+/* line 404, main.scss */
+.tile.tile-2048 .tile-inner {
+  background-size: 100% auto;
+  color: rgba(249, 246, 242, 0.84);
+  background: url("../assets/tile/2048.jpg");
+  font-size: 35px;
+}
+@media screen and (max-width: 520px) {
+  /* line 404, main.scss */
+  .tile.tile-2048 .tile-inner {
+    font-size: 15px;
+  }
+}
+/* line 457, main.scss */
+.tile.tile-super .tile-inner {
+  color: rgba(249, 246, 242, 0.84);
+  background: #3c3a32;
+  font-size: 30px;
+}
+@media screen and (max-width: 520px) {
+  /* line 457, main.scss */
+  .tile.tile-super .tile-inner {
+    font-size: 10px;
+  }
+}
+
+@-webkit-keyframes appear {
+  /* line 470, main.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+  }
+
+  /* line 475, main.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes appear {
+  /* line 470, main.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+  }
+
+  /* line 475, main.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  /* line 470, main.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+  }
+
+  /* line 475, main.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* line 481, main.scss */
+.tile-new .tile-inner {
+  -webkit-animation: appear 200ms ease 100ms;
+  -moz-animation: appear 200ms ease 100ms;
+  animation: appear 200ms ease 100ms;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes pop {
+  /* line 487, main.scss */
+  0% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+  }
+
+  /* line 491, main.scss */
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  /* line 495, main.scss */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes pop {
+  /* line 487, main.scss */
+  0% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+  }
+
+  /* line 491, main.scss */
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  /* line 495, main.scss */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  /* line 487, main.scss */
+  0% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+  }
+
+  /* line 491, main.scss */
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  /* line 495, main.scss */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* line 500, main.scss */
+.tile-merged .tile-inner {
+  z-index: 20;
+  -webkit-animation: pop 200ms ease 100ms;
+  -moz-animation: pop 200ms ease 100ms;
+  animation: pop 200ms ease 100ms;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 76, helpers.scss */
+.above-game:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 510, main.scss */
+.game-intro {
+  float: left;
+  line-height: 42px;
+  margin-bottom: 0;
+}
+
+/* line 516, main.scss */
+.restart-button {
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: rgba(249, 246, 242, 0.84);
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: right;
+}
+
+/* line 523, main.scss */
+.game-explanation {
+  margin-top: 50px;
+  text-shadow: 1px 1px #3C3C3C;
+}
+
+.text-shadow{
+  text-shadow: 1px 1px #3C3C3C;
+}
+
+@media screen and (max-width: 520px) {
+  /* line 536, main.scss */
+  html, body {
+    font-size: 15px;
+  }
+
+  /* line 540, main.scss */
+  body {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+  /* line 545, main.scss */
+  h1.title {
+    font-size: 27px;
+    margin-top: 15px;
+  }
+
+  /* line 550, main.scss */
+  .container {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  /* line 555, main.scss */
+  .score-container, .best-container {
+    margin-top: 0;
+    padding: 15px 10px;
+    min-width: 40px;
+  }
+
+  /* line 561, main.scss */
+  .heading {
+    margin-bottom: 10px;
+  }
+
+  /* line 566, main.scss */
+  .game-intro {
+    width: 55%;
+    display: block;
+    box-sizing: border-box;
+    line-height: 1.65;
+  }
+
+  /* line 573, main.scss */
+  .restart-button {
+    width: 42%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px;
+  }
+
+  /* line 221, main.scss */
+  .game-container {
+    margin-top: 17px;
+    position: relative;
+    padding: 10px;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -ms-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    background: #bbada0;
+    border-radius: 6px;
+    width: 280px;
+    height: 280px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 245, main.scss */
+  .game-container .game-message {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(238, 228, 218, 0.5);
+    z-index: 100;
+    text-align: center;
+    -webkit-animation: fade-in 800ms ease 1200ms;
+    -moz-animation: fade-in 800ms ease 1200ms;
+    animation: fade-in 800ms ease 1200ms;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  /* line 258, main.scss */
+  .game-container .game-message p {
+    font-size: 60px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 222px;
+  }
+  /* line 268, main.scss */
+  .game-container .game-message .lower {
+    display: block;
+    margin-top: 59px;
+  }
+  /* line 273, main.scss */
+  .game-container .game-message a {
+    display: inline-block;
+    background: #8f7a66;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: rgba(249, 246, 242, 0.84);
+    height: 40px;
+    line-height: 42px;
+    margin-left: 9px;
+  }
+  /* line 278, main.scss */
+  .game-container .game-message a.keep-playing-button {
+    display: none;
+  }
+  /* line 286, main.scss */
+  .game-container .game-message.game-won {
+    background: rgba(237, 194, 46, 0.5);
+    color: rgba(249, 246, 242, 0.84);
+  }
+  /* line 290, main.scss */
+  .game-container .game-message.game-won a.keep-playing-button {
+    display: inline-block;
+  }
+  /* line 295, main.scss */
+  .game-container .game-message.game-won, .game-container .game-message.game-over {
+    display: block;
+  }
+
+  /* line 301, main.scss */
+  .grid-container {
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* line 306, main.scss */
+  .grid-row {
+    margin-bottom: 10px;
+  }
+  /* line 309, main.scss */
+  .grid-row:last-child {
+    margin-bottom: 0;
+  }
+  /* line 313, main.scss */
+  .grid-row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  /* line 320, main.scss */
+  .grid-cell {
+    width: 57.5px;
+    height: 57.5px;
+    margin-right: 10px;
+    float: left;
+    border-radius: 3px;
+    background: rgba(238, 228, 218, 0.35);
+  }
+  /* line 330, main.scss */
+  .grid-cell:last-child {
+    margin-right: 0;
+  }
+
+  /* line 335, main.scss */
+  .tile-container {
+    position: absolute;
+    z-index: 2;
+  }
+
+  /* line 341, main.scss */
+  .tile, .tile .tile-inner {
+    width: 58px;
+    height: 58px;
+    line-height: 67.5px;
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-1-1 {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-1-2 {
+    -webkit-transform: translate(0px, 67px);
+    -moz-transform: translate(0px, 67px);
+    transform: translate(0px, 67px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-1-3 {
+    -webkit-transform: translate(0px, 135px);
+    -moz-transform: translate(0px, 135px);
+    transform: translate(0px, 135px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-1-4 {
+    -webkit-transform: translate(0px, 202px);
+    -moz-transform: translate(0px, 202px);
+    transform: translate(0px, 202px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-2-1 {
+    -webkit-transform: translate(67px, 0px);
+    -moz-transform: translate(67px, 0px);
+    transform: translate(67px, 0px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-2-2 {
+    -webkit-transform: translate(67px, 67px);
+    -moz-transform: translate(67px, 67px);
+    transform: translate(67px, 67px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-2-3 {
+    -webkit-transform: translate(67px, 135px);
+    -moz-transform: translate(67px, 135px);
+    transform: translate(67px, 135px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-2-4 {
+    -webkit-transform: translate(67px, 202px);
+    -moz-transform: translate(67px, 202px);
+    transform: translate(67px, 202px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-3-1 {
+    -webkit-transform: translate(135px, 0px);
+    -moz-transform: translate(135px, 0px);
+    transform: translate(135px, 0px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-3-2 {
+    -webkit-transform: translate(135px, 67px);
+    -moz-transform: translate(135px, 67px);
+    transform: translate(135px, 67px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-3-3 {
+    -webkit-transform: translate(135px, 135px);
+    -moz-transform: translate(135px, 135px);
+    transform: translate(135px, 135px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-3-4 {
+    -webkit-transform: translate(135px, 202px);
+    -moz-transform: translate(135px, 202px);
+    transform: translate(135px, 202px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-4-1 {
+    -webkit-transform: translate(202px, 0px);
+    -moz-transform: translate(202px, 0px);
+    transform: translate(202px, 0px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-4-2 {
+    -webkit-transform: translate(202px, 67px);
+    -moz-transform: translate(202px, 67px);
+    transform: translate(202px, 67px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-4-3 {
+    -webkit-transform: translate(202px, 135px);
+    -moz-transform: translate(202px, 135px);
+    transform: translate(202px, 135px);
+  }
+  /* line 350, main.scss */
+  .tile.tile-position-4-4 {
+    -webkit-transform: translate(202px, 202px);
+    -moz-transform: translate(202px, 202px);
+    transform: translate(202px, 202px);
+  }
+
+  /* line 585, main.scss */
+  .tile .tile-inner {
+    font-size: 35px;
+  }
+
+  /* line 590, main.scss */
+  .game-message p {
+    font-size: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    margin-top: 90px !important;
+  }
+  /* line 597, main.scss */
+  .game-message .lower {
+    margin-top: 30px !important;
+  }
+}
